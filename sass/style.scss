@@ -1,6 +1,6 @@
-$primary-color-light: #eeeeee;
-$primary-color-dark: #0a0a0a;
-$background-color-light: #dcdbdb;
+$primary-color-light: #d8d8eb;
+$primary-color-dark: #030b34;
+$background-color-light: #d9dae7;
 $background-color-dark: #1f1b24;
 $primary-font:'PT Serif',
 'Garamond',
@@ -12,6 +12,7 @@ $secondary-font: 'Courier New',monospace;
 
 body {
     background-color: $background-color-light;
+    font-weight: 100;
     color: $primary-color-dark;
     font-family: $primary-font;
     font-size: 20px;
@@ -20,6 +21,13 @@ body {
     padding: 1em;
     margin: auto;
     max-width: 52em;
+    .title-img {
+            display: inline; // Hide the default image in dark mode
+        }
+    
+        .dark-mode-img {
+            display: none; // Show the dark mode image
+        }
 }
 
 .dark-mode-toggle {
@@ -35,6 +43,13 @@ body {
 body.dark-mode {
     background-color: $background-color-dark;
     color: $primary-color-light;
+    .title-img {
+            display: none; // Hide the default image in dark mode
+        }
+    
+    .dark-mode-img {
+            display: inline; // Show the dark mode image
+        }
 }
 
 .dark-mode-toggle.dark-mode {
@@ -131,8 +146,21 @@ body.dark-mode {
         }
     }
 }
+
+.title-img {
+    height: 25px;
+    width: 25px;
+    margin-right: 12px;
+}
+
+.dark-mode-img {
+    height: 25px;
+    width: 25px;
+    margin-right: 12px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 70px;
 }

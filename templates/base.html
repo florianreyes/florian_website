@@ -11,15 +11,19 @@
     <nav class="navbar">
         <div class="nav-left">
             <ul>
-                <li><a href={{ get_url(path="/") }}>Florian Reyes</a></li>
+                <li>
+                    <img class="dark-mode-img" src={{ get_url(path="title-logo-clear.png" )}} alt="">
+                    <img class="title-img" src={{ get_url(path="title-logo.png" )}} alt="">
+                    <a class = "name" href={{ get_url(path="/") }}>Florian Reyes</a>
+                </li>
             </ul>
         </div>
         <div class="nav-right">
             <ul>
-                <li><a href="https://github.com">GitHub</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-                <li><a href="mailto:your-email@example.com">Contact</a></li>
-                <li><a onclick = "toggleDarkMode()">Dark Mode</a></li>
+                <li><a href="https://github.com/florianreyes">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/florian-reyes-8983b9225/">LinkedIn</a></li>
+                <li><a href="mailto:floriandevkings@gmail.com">Contact</a></li>
+                <li><a onclick = "toggleDarkMode()">Mode</a></li>
             </ul>
         </div>
     </nav>
@@ -30,6 +34,12 @@
         </div>
     </section>
     <script src ={{ get_url(path="darkmode.js") }} ></script>
+    <script src={{ get_url(path="scramble.js") }}></script>
+   <script>
+    window.onload = function () {
+        writeTitle();
+    };
+</script>
 </body>
 
 </html>
