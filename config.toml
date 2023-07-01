@@ -1,0 +1,13 @@
+# The URL the site will be built for
+base_url = "https://florianreyes.com"
+
+compile_sass = true
+
+build_search_index = true
+
+
+[markdown]
+highlight_code = true
+
+[extra]
+

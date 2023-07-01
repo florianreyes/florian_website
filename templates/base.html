@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlorianReyes</title>
+    <link rel="stylesheet" href={{ get_url(path="style.css") }} />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href={{ get_url(path="/") }}>Florian Reyes</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="mailto:your-email@example.com">Contact</a></li>
+                <li><a onclick = "toggleDarkMode()">Dark Mode</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
+    </section>
+    <script src ={{ get_url(path="darkmode.js") }} ></script>
+</body>
+
+</html>

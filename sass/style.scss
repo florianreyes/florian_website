@@ -1,0 +1,138 @@
+$primary-color-light: #eeeeee;
+$primary-color-dark: #0a0a0a;
+$background-color-light: #dcdbdb;
+$background-color-dark: #1f1b24;
+$primary-font:'PT Serif',
+'Garamond',
+'Georgia',
+serif;
+$secondary-font: 'Courier New',monospace;
+
+// Default (light mode) styles
+
+body {
+    background-color: $background-color-light;
+    color: $primary-color-dark;
+    font-family: $primary-font;
+    font-size: 20px;
+    word-break: break-word;
+    line-height: 1.5em;
+    padding: 1em;
+    margin: auto;
+    max-width: 52em;
+}
+
+.dark-mode-toggle {
+    background-color: $background-color-dark;
+    color: $primary-color-light;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+// Dark mode styles
+body.dark-mode {
+    background-color: $background-color-dark;
+    color: $primary-color-light;
+}
+
+.dark-mode-toggle.dark-mode {
+    background-color: $background-color-light;
+    color: $primary-color-dark;
+}
+.date{
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+.article-title{
+    font-family:$secondary-font;
+    &:hover {
+            text-decoration: underline;
+        }
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        width: 100%;
+        margin-bottom: 1em;        
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 0.7em;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+// Navbar styles
+.nav-right {
+    display: flex;
+    justify-content: flex-end; // Positions navbar on the right
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-right: 10px;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.nav-left {
+    display: flex;
+    justify-content: flex-start; // Positions navbar on the right
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-right: 10px;
+
+        li {
+            // display: inline-block;
+            margin-right: 10px;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

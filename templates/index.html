@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="title">Hey there!</h2>
+<p>My name is <strong>Florian</strong>, i'm a data science student at Universidad Torcuato DiTella and like to write about topics i learn on my own, or in university.</p>
+<p>On this website i will show some project/articles to share my learning journey and maybe, help someone else on the field.</p>
+
+<h2 id="Articles">Articles</h2>
+<ul class="articles">
+    {% set section = get_section(path="blog/_index.md") %}
+    {% for page in section.pages %}
+    <li>
+        <strong><a class = "article-title"href="{{ page.permalink | safe }}">{{ page.title }}</a></strong>
+        <p class="date">{{ page.date }}</p>
+    </li>
+    {% endfor %}
+{% endblock content %}
