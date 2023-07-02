@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="title">Hey there!</h2>
+<h2 class="hey-header">Hey there!</h2>
 <p>My name is <strong>Florian</strong>, i'm a data science student at Universidad Torcuato DiTella and like to write about topics i learn on my own, or in university. I have a strong foundation in
 various data science libraries and tools, including pandas, numpy, and scikit-learn.</p>
 <p>On this website i will show some project/articles to share my learning journey and maybe, help someone else on the field.</p>
 
-<h2 id="Articles">Articles</h2>
+<h2 class = "articles-header">Articles</h2>
 <ul class="articles">
     {% set section = get_section(path="blog/_index.md") %}
     {% for page in section.pages %}
