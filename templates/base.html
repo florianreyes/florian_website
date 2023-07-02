@@ -4,7 +4,26 @@
 <head>
     <meta charset="utf-8">
     <title>FlorianReyes</title>
-    <link rel="stylesheet" href={{ get_url(path="style.css") }} />
+    <style>
+        body {
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        // Check user's preferred mode and apply it on page load
+        (function () {
+            var preferredMode = localStorage.getItem("mode") || "light";
+            
+            // Set the theme class on the <body> element
+                document.body.classList.add(preferredMode === "dark" ? "dark-mode" : "light-mode");
+                
+                // Show the body after applying the preferred mode
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.body.style.visibility = "visible";
+                });
+            })();
+            </script>
+            <link rel="stylesheet" href={{ get_url(path="style.css") }} />
 </head>
 
 <body>
