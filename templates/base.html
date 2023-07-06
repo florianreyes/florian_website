@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>FlorianReyes</title>
-    <style>
+    <!-- <style>
         body {
             visibility: hidden;
         }
-    </style>
-    <script>
+    </style> -->
+    <!-- <script>
         // Check user's preferred mode and apply it on page load
         (function () {
             var preferredMode = localStorage.getItem("mode") || "light";
@@ -22,7 +22,7 @@
                     document.body.style.visibility = "visible";
                 });
             })();
-            </script>
+            </script> -->
             <link rel="stylesheet" href={{ get_url(path="style.css") }} />
 </head>
 
@@ -42,7 +42,7 @@
                 <li><a href="https://github.com/florianreyes">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/florian-reyes-8983b9225/">LinkedIn</a></li>
                 <li><a href="mailto:floriandevkings@gmail.com">Contact</a></li>
-                <li><a onclick = "toggleDarkMode()">Mode</a></li>
+                <!-- <li><a onclick = "toggleDarkMode()">Mode</a></li> -->
             </ul>
         </div>
     </nav>
@@ -54,11 +54,11 @@
     </section>
     <script src ={{ get_url(path="darkmode.js") }} ></script>
     <script src={{ get_url(path="scramble.js") }}></script>
-   <script>
+   <!-- <script>
     window.onload = function () {
         writeTitle();
     };
-</script>
+</script> -->
 </body>
 
 </html>

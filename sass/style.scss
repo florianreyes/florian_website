@@ -1,8 +1,8 @@
 $primary-color-light: #d8d8eb;
-$primary-color-dark: #030b34;
-$background-color-light: #d9dae7;
+$primary-color-dark: #131832;
+$background-color-light: rgb(243, 244, 246,0.8);
 $background-color-dark: #1f1b24;
-$accent-light: #7087ef;
+$accent-light: #2917ef;
 $primary-font:'PT Serif',
 'Garamond',
 'Georgia',
@@ -13,7 +13,6 @@ $secondary-font: 'Fira Sans',sans-serif;
 
 body {
     background-color: $background-color-light;
-    font-weight: 50;
     color: $primary-color-dark;
     font-family: $primary-font;
     font-size: 20px;
@@ -23,7 +22,8 @@ body {
     margin: auto;
     max-width: 52em;
     strong{
-        font-weight: 600;
+        font-weight: 700;
+        color: $accent-light;
     }
     .title-img {
             display: inline; // Hide the default image in dark mode
@@ -108,6 +108,10 @@ body.dark-mode {
     }
 }
 
+.intro{
+    max-width: 40em;  
+}
+
 // Navbar styles
 .nav-right {
     display: flex;
@@ -171,4 +175,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
+    cursor: pointer;
+}
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
 }
