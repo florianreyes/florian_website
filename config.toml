@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://florian-website-tfom.vercel.app/"
+base_url = "https://florian-reyes.vercel.app/"
 
 compile_sass = true
 
