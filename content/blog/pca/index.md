@@ -98,6 +98,6 @@ and our data is well distributed for clustering.
 sns.scatterplot(x =new_df[0], y = new_df[1], data = new_df, hue = new_df.Class )
 ```
 
-Output:
+<!-- Output: -->
 
 <!-- ![here](images/first_scatter.png) -->
